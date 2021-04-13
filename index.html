@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
             <div class="header-top">
@@ -35,6 +34,7 @@
                 <div class="header-inner-wrap">
                     <h1 class="header__title">OXYGEN</h1>
                     <p class="header__suptitle">STARTER UI KIT</p>
+                    <div class="header__suptitle swapiDiv">пока нет данных</div>
                     <div class="header__decor"></div>
                 </div>
             </div>
@@ -329,68 +329,73 @@
                 <li class="team__list-item">
                     <img class="team__img" src="./images/team-1.jpg" alt="">
                     <p class="team__name">BERNARD SPARKS</p>
+                    <p class="team__role">CEO</p>
                 </li>
                 <li class="team__list-item">
                     <img class="team__img" src="./images/team-2.jpg" alt="">
                     <p class="team__name">MINERVA BENSON</p>
+                    <p class="team__role">Co-Founder</p>
                 </li>
                 <li class="team__list-item">
                     <img class="team__img" src="./images/team-3.jpg" alt="">
                     <p class="team__name">JARED OLSON</p>
+                    <p class="team__role">Sales</p>
                 </li>
             </ul>
         </div>
     </section>
 
     <section class="section section_grey price">
-        <h2 class="title">Pricing Plans</h2>
-        <ul class="price__list">
+        <div class="container">
+            <h2 class="title">Pricing Plans</h2>
+            <ul class="price__list">
+                <li class="price__item">
+                    <p class="price__name">Basic</p>
+                    <div class="price__cost">
+                        <sup>$</sup>29<sub>/ mo</sub>
+                    </div>
+                    <ul class="price__adventaches-list">
+                        <li class="price__adventaches-item">1 Logo Design</li>
+                        <li class="price__adventaches-item">1 Website Design</li>
+                        <li class="price__adventaches-item">1 Domain Free</li>
+                        <li class="price__adventaches-item">3 Month License</li>
+                        <li class="price__adventaches-item">1 GB Storage</li>
+                    </ul>
+                    <button class="price__btn" type="button">CHOOSE PLAN</button>
+                </li>
 
-            <li class="price__item">
-                <p class="price__name">Basic</p>
-                <div class="price__cost">
-                    <sup>$</sup>29<sub>/ mo</sub>
-                </div>
-                <ul class="price__adventaches-list">
-                    <li class="price__adventaches-item">1 Logo Design</li>
-                    <li class="price__adventaches-item">1 Website Design</li>
-                    <li class="price__adventaches-item">1 Domain Free</li>
-                    <li class="price__adventaches-item">3 Month License</li>
-                    <li class="price__adventaches-item">1 GB Storage</li>
-                </ul>
-                <button class="price__btn" type="button">CHOOSE PLAN</button>
-            </li>
+                <li class="price__item">
+                    <p class="price__name">Starter</p>
+                    <div class="price__cost">
+                        <sup>$</sup>50<sub>/ mo</sub>
+                    </div>
+                    <ul class="price__adventaches-list">
+                        <li class="price__adventaches-item">2 Logo Design</li>
+                        <li class="price__adventaches-item">2 Website Design</li>
+                        <li class="price__adventaches-item">1 Domain Free</li>
+                        <li class="price__adventaches-item">6 Month License</li>
+                        <li class="price__adventaches-item">1 GB Storage</li>
+                    </ul>
+                    <button class="price__btn" type="button">CHOOSE PLAN</button>
+                </li>
 
-            <li class="price__item">
-                <p class="price__name">Starter</p>
-                <div class="price__cost">
-                    <sup>$</sup>50<sub>/ mo</sub>
-                </div>
-                <ul class="price__adventaches-list">
-                    <li class="price__adventaches-item">2 Logo Design</li>
-                    <li class="price__adventaches-item">2 Website Design</li>
-                    <li class="price__adventaches-item">1 Domain Free</li>
-                    <li class="price__adventaches-item">6 Month License</li>
-                    <li class="price__adventaches-item">1 GB Storage</li>
-                </ul>
-                <button class="price__btn" type="button">CHOOSE PLAN</button>
-            </li>
+                <li class="price__item">
+                    <p class="price__name">Professional</p>
+                    <div class="price__cost">
+                        <sup>$</sup>70<sub>/ mo</sub>
+                    </div>
+                    <ul class="price__adventaches-list">
+                        <li class="price__adventaches-item">3 Logo Design</li>
+                        <li class="price__adventaches-item">3 Website Design</li>
+                        <li class="price__adventaches-item">2 Domain Free</li>
+                        <li class="price__adventaches-item">12 Month License</li>
+                        <li class="price__adventaches-item">2 GB Storage</li>
+                    </ul>
+                    <button class="price__btn" type="button">CHOOSE PLAN</button>
+                </li>
+            </ul>
+        </div>
 
-            <li class="price__item">
-                <p class="price__name">Professional</p>
-                <div class="price__cost">
-                    <sup>$</sup>70<sub>/ mo</sub>
-                </div>
-                <ul class="price__adventaches-list">
-                    <li class="price__adventaches-item">3 Logo Design</li>
-                    <li class="price__adventaches-item">3 Website Design</li>
-                    <li class="price__adventaches-item">2 Domain Free</li>
-                    <li class="price__adventaches-item">12 Month License</li>
-                    <li class="price__adventaches-item">2 GB Storage</li>
-                </ul>
-                <button class="price__btn" type="button">CHOOSE PLAN</button>
-            </li>
-        </ul>
     </section>
 
     <section class="section section-empty"></section>
@@ -398,11 +403,11 @@
     <section class="section contacts">
         <div class="contacts__content">
             <h2 class="title">Get in Touch</h2>
-            <form class="contacts__form" action="/">
-                <input class="contacts__input" type="text" placeholder="YOUR NAME">
-                <input class="contacts__input" type="text" placeholder="VALID EMAIL">
-                <textarea class="contacts__message" placeholder="YOUR MESSAGE"></textarea>
-                <button class="contacts__btn" type="button">SEND MESSAGE</button>
+            <form class="contacts__form form" action="/">
+                <input class="form__input" type="text" placeholder="YOUR NAME" required>
+                <input class="form__input" type="email" placeholder="VALID EMAIL" required>
+                <textarea class="form__message" placeholder="YOUR MESSAGE" required></textarea>
+                <button class="form__btn" >SEND MESSAGE</button>
             </form>
         </div>
         <img class="contacts__map" src="./images/MapBg.jpg" alt="">
@@ -445,6 +450,12 @@
         </div>
         <div class="footer__rights">@2015 Oxygen Theme</div>
     </footer>
+
+
+
+
+    <script src="./main.js"></script>
+
 
 
 
