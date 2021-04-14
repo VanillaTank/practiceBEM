@@ -21,3 +21,9 @@
     src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
     url('../fonts/OpenSans-Regular.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
+    url('../fonts/Montserrat-Light.woff') format('woff');
+}
